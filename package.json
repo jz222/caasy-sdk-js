@@ -1,0 +1,36 @@
+{
+    "name": "@caasy/sdk-js",
+    "version": "0.0.1-alpha",
+    "description": "Official Caasy Javascript SDK.",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jz222/caasy-sdk-js.git"
+    },
+    "scripts": {
+        "dev": "http-server dev/",
+        "build": "rollup -c"
+    },
+    "author": "Timo Zimmermann",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jz222/caasy-sdk-js/issues"
+    },
+    "homepage": "https://github.com/jz222/caasy-sdk-js#readme",
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "rollup": "^2.6.0",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-terser": "^5.3.0"
+    },
+    "keywords": [
+        "caasy",
+        "headless",
+        "cms",
+        "caas"
+    ],
+    "dependencies": {
+        "phin": "^3.5.0"
+    }
+}

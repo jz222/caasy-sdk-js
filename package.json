@@ -2,7 +2,7 @@
     "name": "@caasy/sdk-js",
     "version": "0.0.1-alpha",
     "description": "Official Caasy Javascript SDK.",
-    "main": "lib/index.js",
+    "main": "dist/caasy-min.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jz222/caasy-sdk-js.git"

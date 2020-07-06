@@ -1,6 +1,6 @@
 {
     "name": "@caasy/sdk-js",
-    "version": "0.0.2-alpha",
+    "version": "0.0.3-alpha",
     "description": "Official Caasy Javascript SDK.",
     "main": "dist/caasy-min.js",
     "repository": {
@@ -9,7 +9,8 @@
     },
     "scripts": {
         "dev": "http-server dev/",
-        "build": "rollup -c"
+        "build": "rollup -c",
+        "release": "npm run build && npm publish --access public"
     },
     "author": "Timo Zimmermann",
     "license": "ISC",

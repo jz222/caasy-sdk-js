@@ -1,5 +1,6 @@
 .idea
 dev
+lib
 node_modules
 babel.config.js
 rollup.config.js

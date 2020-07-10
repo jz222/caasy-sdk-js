@@ -16,6 +16,9 @@ const main = async () => {
         const allAuthors = await caasy.posts.getAllAuthors(2);
         console.log(allAuthors);
         
+        const postsByAuthor = await caasy.posts.getAllByAuthor(2);
+        console.log(postsByAuthor);
+        
     } catch (error) {
         console.log(error)
     }

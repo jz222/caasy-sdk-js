@@ -8,12 +8,12 @@ const main = async () => {
         console.log(allPosts);
         
         const post = await caasy.posts.getById('5f11a482b37775863c3243a8');
-        console.log(post.getElementById('1594991894531-636n'));
-
+        console.log(post);
+        
         const allPostIds = await caasy.posts.getAllIds();
         console.log(allPostIds);
 
-        const allAuthors = await caasy.posts.getAllAuthors(2);
+        const allAuthors = await caasy.posts.getAllAuthors(1);
         console.log(allAuthors);
 
         const postsByAuthor = await caasy.posts.getAllByAuthor('5f05b66d985d5565e1826921', 1);

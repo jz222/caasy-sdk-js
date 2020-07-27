@@ -15,7 +15,17 @@ export default {
         commonjs(),
         babel({
             extensions: ['.js'],
-            exclude: ['node_modules/@babel/**', 'node_modules/core-js/**']
+            exclude: ['node_modules/@babel/**', 'node_modules/core-js/**'],
+            presets: [
+                [
+                    '@babel/preset-env',
+                    {
+                        useBuiltIns: 'usage',
+                        debug: true,
+                        corejs: 3
+                    }
+                ]
+            ]
         }),
         terser()
     ]

@@ -1,6 +1,6 @@
 {
     "name": "@caasy/sdk-js",
-    "version": "0.1.1-beta",
+    "version": "0.1.2-beta",
     "description": "Official Caasy Javascript SDK.",
     "main": "dist/caasy-min.js",
     "repository": {
@@ -34,6 +34,7 @@
         "caas"
     ],
     "dependencies": {
+        "core-js": "^3.6.5",
         "phin": "^3.5.0"
     }
 }

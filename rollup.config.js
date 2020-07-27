@@ -1,7 +1,9 @@
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+// import { nodeResolve } from '@rollup/plugin-node-resolve';
+// import commonjs from '@rollup/plugin-commonjs';
+// import builtins from 'rollup-plugin-node-builtins';
+
 
 export default {
     input: 'lib/index.js',
@@ -11,21 +13,22 @@ export default {
         name: 'caasy'
     },
     plugins: [
-        nodeResolve(),
-        commonjs(),
+        // nodeResolve(),
+        // commonjs(),
+        // builtins(),
         babel({
             extensions: ['.js'],
             exclude: ['node_modules/@babel/**', 'node_modules/core-js/**'],
-            presets: [
-                [
-                    '@babel/preset-env',
-                    {
-                        useBuiltIns: 'usage',
-                        debug: true,
-                        corejs: 3
-                    }
-                ]
-            ]
+            // presets: [
+            //     [
+            //         '@babel/preset-env',
+            //         {
+            //             useBuiltIns: 'usage',
+            //             debug: true,
+            //             corejs: 3
+            //         }
+            //     ]
+            // ]
         }),
         terser()
     ]

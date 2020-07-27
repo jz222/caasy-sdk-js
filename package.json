@@ -34,8 +34,6 @@
         "caas"
     ],
     "dependencies": {
-        "axios": "^0.19.2",
-        "core-js": "^3.6.5",
-        "phin": "^3.5.0"
+        "axios": "^0.19.2"
     }
 }

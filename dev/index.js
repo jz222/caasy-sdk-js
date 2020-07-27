@@ -12,12 +12,18 @@ const main = async () => {
         
         const allPostIds = await caasy.posts.getAllIds();
         console.log(allPostIds);
-
+        
         const allAuthors = await caasy.posts.getAllAuthors(1);
         console.log(allAuthors);
-
+        
         const postsByAuthor = await caasy.posts.getAllByAuthor('5f05b66d985d5565e1826921', 1);
         console.log(postsByAuthor);
+        
+        const allPages = await caasy.pages.getAll();
+        console.log(allPages);
+        
+        const pageById = await caasy.pages.getById('5f1eb50afca07ac46ce85056');
+        console.log(pageById.elements);
         
     } catch (error) {
         console.log(error)

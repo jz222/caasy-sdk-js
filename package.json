@@ -1,6 +1,6 @@
 {
     "name": "@caasy/sdk-js",
-    "version": "0.1.7-beta",
+    "version": "0.1.8-beta",
     "description": "Official Caasy Javascript SDK.",
     "main": "dist/caasy-min.js",
     "repository": {
